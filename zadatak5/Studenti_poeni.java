@@ -24,6 +24,6 @@ public class Studenti_poeni {
     			maxPoeni = brojPoena;		
     		}
         }
-			System.out.print("Najveci broj poena ima:" + imeStud + ", " + maxPoeni);	
+		System.out.print("Najveci broj poena ima:" + imeStud + ", " + maxPoeni);	
 	}
 }
