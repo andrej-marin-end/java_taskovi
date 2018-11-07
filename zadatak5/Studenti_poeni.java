@@ -4,20 +4,24 @@ import java.util.Scanner;
 public class Studenti_poeni {
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
+		Scanner ulaz = new Scanner(System.in);
 		System.out.println("Unesi broj studenata");
-		int brojStud = scanner.nextInt();
+		int brojStud = ulaz.nextInt();
 		
-		System.out.println("Unesi imena studenata. Zatim i nji");
+		/*System.out.println("Unesi imena studenata. Zatim i njihovih poena.");
 		String imeStud;
 		int poeniStudenata = brojStud;
-		int brojPoena;
+		int brojPoena;*/
 		
+		String ime;
+		int poeni;
 		
-		
-        for () {
-        	imeStud = scanner.next(a);
-        	projPoena = scanner.nexInt(a);
+        for (int i = 1; i<=brojStud; i++) {
+        	Scanner ulaz1 = new Scanner(System.in);
+    		System.out.println("Unesi ime studenta");
+    		ime = ulaz.next();
+    		System.out.println("Unesi poene");
+    		poeni = ulaz.nextInt();
         }
 		
 		
