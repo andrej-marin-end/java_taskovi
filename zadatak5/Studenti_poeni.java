@@ -5,27 +5,28 @@ public class Studenti_poeni {
 	public static void main(String[] args) {
 		
 		Scanner ulaz = new Scanner(System.in);
-		System.out.println("Unesi broj studenata");
+		System.out.println("Unesi broj studenata:");
 		int brojStud = ulaz.nextInt();
 		
-		/*System.out.println("Unesi imena studenata. Zatim i njihovih poena.");
-		String imeStud;
-		int poeniStudenata = brojStud;
-		int brojPoena;*/
+		String imeStud = "";
+		int maxPoeni = 0;
+	
 		
-		String ime;
-		int poeni;
-		
-        for (int i = 1; i<=brojStud; i++) {
-        	Scanner ulaz1 = new Scanner(System.in);
+        for (int i = 1; i<=brojStud; i++) 
+        {
     		System.out.println("Unesi ime studenta");
-    		ime = ulaz.next();
+    		String Student = ulaz.next();
     		System.out.println("Unesi poene");
-    		poeni = ulaz.nextInt();
+    		int brojPoena = ulaz.nextInt();
+    		
+    		if (brojPoena > maxPoeni) {
+    			imeStud = Student;
+    			maxPoeni = brojPoena;
+    			
+    			
         }
-		
-		
-		
+        }
+			System.out.print("Najveci broj poena ima:" + imeStud + ", " + maxPoeni);
 		
 	}
-}
+	}
