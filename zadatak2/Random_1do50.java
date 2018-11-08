@@ -28,5 +28,6 @@ public class Random_1do50 {
         }
     }
         System.out.println("Neverovatno! Pogodili ste tacan broj!");
+        ulaz.close();
     }
 }
