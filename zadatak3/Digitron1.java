@@ -44,6 +44,7 @@ public class Digitron1 {
               System.out.println("Rezultat je: " + kolicnik);
           }
            }
+           ulaz.close();
     }
 
 }
