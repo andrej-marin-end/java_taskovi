@@ -10,7 +10,7 @@ public class Ispis_odAdoB {
 		int a = ulaz.nextInt();
 		System.out.println("Unesite drugi broj:");
 		int b = ulaz.nextInt();
-				
+		ulaz.close();		
 		int c;
 		c=a;
 		do	 {	
