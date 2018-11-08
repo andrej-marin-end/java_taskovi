@@ -11,7 +11,7 @@ public class Studenti_poeni {
 		
 		String imeStud = "";
 		int maxPoeni = 0;
-	
+		
 		
         for (int i = 1; i<=brojStud; i++) 
         {
@@ -22,9 +22,13 @@ public class Studenti_poeni {
     		
     		if (brojPoena > maxPoeni) {
     			imeStud = Student;
-    			maxPoeni = brojPoena;		
+    			maxPoeni = brojPoena;	
+    		} else if (brojPoena == maxPoeni) {
+    			
+    			System.out.println("Studenti" + imeStud + maxPoeni + "imaju jednak broj poena.");
     		}
         }
 		System.out.print("Najveci broj poena ima:" + imeStud + ", " + maxPoeni);	
+		ulaz.close();
 	}
 }
