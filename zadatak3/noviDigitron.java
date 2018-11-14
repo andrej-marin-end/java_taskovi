@@ -1,4 +1,4 @@
-package UdemyTutorials;
+package zadatak3;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -6,49 +6,59 @@ import java.util.Scanner;
 public class noviDigitron {
 	
 	public static void main(String[] args) {
+		System.out.println("Unesi dva broja:");
 		Scanner ulaz = new Scanner(System.in);
-		pocetnaPoruka();
-		unos();
-		//zbir();
-		char znak;
-		znak = ulaz.next().charAt(0);
-		
-        if (znak == 's') {
-        	System.out.println(zbir());
+		int prviBr = ulaz.nextInt();
+		int drugiBr = 0;
+		try {
+		drugiBr = ulaz.nextInt();
+			if (drugiBr == 0) {
+				System.out.println("Nulom se ne deli.\nPokusajte ponovo.");
+			}
+		} catch (InputMismatchException e){
+            ulaz.nextLine();
         }
-        
-	}
-	
-	public static void unos() {
-		Scanner ulaz = new Scanner(System.in);
-		System.out.println("Unesite prvi broj:");
-        int prviBroj = ulaz.nextInt();
-        System.out.println("Unesite drugi broj:");
-        int drugiBroj = ulaz.nextInt();
-        //char znak;
-        ulaz.close();
-	}
-	
-	static void pocetnaPoruka () {
-		System.out.println("Ovo je jednostavan diitron.");
-		System.out.println("Za sabiranje unesite znak s: ");
-        System.out.println("Za oduzimanje drugog od prvog broja, unesite znak o: ");
-        System.out.println("Za mnozenje brojeva unesite znak m: ");
-        System.out.println("Ukoliko zelite da podelite prvi broj sa drugim brojem, unesite znak d: ");
-        System.out.println("");
-	}
-	
-	public static void zbir() {
-		Scanner ulaz = new Scanner(System.in);
-		int prviBroj = ulaz.nextInt();
-        int drugiBroj = ulaz.nextInt();
-		int z = prviBroj + drugiBroj;
-		System.out.println(z);
+		int rezultat;
+		uputstvo();
+		
+		String operacija = ulaz.next();
+		
+		switch(operacija) {
+		case "+": rezultat=zbir(prviBr, drugiBr);
+		System.out.println(rezultat);
+		break;
+		case "-": rezultat=razlika(prviBr, drugiBr);
+		System.out.println(rezultat);
+		break;
+		case "*": rezultat=proizvod(prviBr, drugiBr);
+		System.out.println(rezultat);
+		break;
+		case "/": rezultat=kolicnik(prviBr, drugiBr);
+		System.out.println(rezultat);
+		break;
+		}
 		ulaz.close();
 		
+		
+	}
+	public static void uputstvo () {
+		System.out.println("Za sabiranje unesi (+)");
+		System.out.println("Za oduzimanje unesi (-)");
+		System.out.println("Za mnozenje unesi (*)");
+		System.out.println("Za deljenje unesi (/)");
+	}
+	public static int zbir (int a, int b) {
+		return a + b;
+	}
+	public static int razlika (int a, int b) {
+		return a - b;
+	}
+	public static int proizvod (int a, int b) {
+		return a * b;
+	}
+	public static int kolicnik (int a, int b) {
+		return a / b;
 	}
 	
+}	
 	
-	
-
-}
