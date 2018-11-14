@@ -11,7 +11,7 @@ public class Random_1do50 {
     Random rand = new Random();
     int zadatiBroj = rand.nextInt(50);
     Scanner ulaz = new Scanner(System.in);
-    int unetiBroj;
+    int unetiBroj = 0;
     boolean pogodak = false;
     
     
@@ -30,7 +30,6 @@ public class Random_1do50 {
             System.out.println("Niste uneli broj.\nPokusajte ponovo.");
             ulaz.nextLine();
         }
-        unetiBroj = ulaz.nextInt();
         
         if (unetiBroj == zadatiBroj) {
             pogodak = true;
