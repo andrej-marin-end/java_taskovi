@@ -9,12 +9,12 @@ public class noviDigitron {
 		Scanner ulaz = new Scanner(System.in);
 		pocetnaPoruka();
 		unos();
-		zbir();
+		//zbir();
 		char znak;
 		znak = ulaz.next().charAt(0);
 		
         if (znak == 's') {
-        	zbir();
+        	System.out.println(zbir());
         }
         
 	}
