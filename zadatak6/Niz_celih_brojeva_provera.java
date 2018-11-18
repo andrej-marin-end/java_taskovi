@@ -1,4 +1,5 @@
-package zadatak6
+package zadatak6;
+
 import java.util.Scanner;
 import java.util.Arrays;
 
