@@ -31,7 +31,6 @@ public class Niz_celih_brojeva_provera {
 		} else {
 			System.out.println(pretraga + " je u nizu.");
 			ulaz.close();
-			//System.out.println(Arrays.sort(niz, 0, 5));
 		}
 	}
 	
