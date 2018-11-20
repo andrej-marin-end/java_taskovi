@@ -1,5 +1,8 @@
 package zadatak8;
 
-public class Stan {
-
+public class Stan extends NekretninaApstr {
+	double povrsinaPodruma;
+	double povrsinaTerase;
+	
+	
 }
