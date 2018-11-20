@@ -1,18 +1,34 @@
 package zadatak7;
 
-public class Kvadrat {
-	double povrsina; 
-	double obim;
+public class Kvadrat extends GeometrijskaSlika {
+public double a;
 	
-	public double izracunajPovrsinu(double str)
+	public Kvadrat(double a) {
+		ime = "kvadrat";
+		this.a = a;
+		izracunajPovrsinu();
+		izracunajObim();
+	} 
+	
+	public Kvadrat(double a, double b) {
+		ime = "kvadrat";
+		this.a = a;
+		izracunajPovrsinu();
+		izracunajObim();
+	} 
+	
+	public Kvadrat(double a, double b, double c) {
+		ime = "kvadrat";
+		this.a = a;
+		izracunajPovrsinu();
+		izracunajObim();
+	} 
+	
+    public void izracunajPovrsinu()
     { 
-        povrsina = str*str;
-        System.out.println("Povrsina kvadrata je " + povrsina);
-        return povrsina;
+        povrsina = a*a;
     }
-    public double izracunajObim(double str) {
-    	obim = 4*str;
-    	System.out.println("Obim kvadrata je " + obim);
-    	return obim;
+    public void izracunajObim() {
+    	obim = a*4;
     }
 }

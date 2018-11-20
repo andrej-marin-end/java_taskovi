@@ -1,19 +1,36 @@
 package zadatak7;
 
-public class Krug {
-	double povrsina; 
-	double obim;
+public class Krug extends GeometrijskaSlika{
 	
-	public double izracunajPovrsinu(double r)
+	public double r;
+	
+	public Krug(double a) {
+		ime = "krug";
+		r = a;
+		izracunajPovrsinu();
+		izracunajObim();
+	} 
+	
+	public Krug(double a, double b) {
+		ime = "krug";
+		r = a;
+		izracunajPovrsinu();
+		izracunajObim();
+	} 
+	
+	public Krug(double a, double b, double c) {
+		ime = "krug";
+		r = a;
+		izracunajPovrsinu();
+		izracunajObim();
+	} 
+	
+	public void izracunajPovrsinu()
     { 
         povrsina = r*r*Math.PI;
-        System.out.println("Povrsina kruga je " + povrsina);
-        return povrsina;
     }
-    public double izracunajObim(double r) {
+    public void izracunajObim() {
     	obim = 2*r*Math.PI;
-    	System.out.println("Obim kruga je " + obim);
-    	return obim;
     }
 	
 	

@@ -2,19 +2,37 @@ package zadatak7;
 
 import java.lang.Math;
 
-public class Trougao {
-	double povrsina; 
-	double obim;
+public class Trougao extends GeometrijskaSlika {
 	
-    public double izracunajPovrsinu(double strA)
+public double a;
+	
+	public Trougao(double a) {
+		ime = "trougao";
+		this.a = a;
+		izracunajPovrsinu();
+		izracunajObim();
+	} 
+	
+	public Trougao(double a, double b) {
+		ime = "trougao";
+		this.a = a;
+		izracunajPovrsinu();
+		izracunajObim();
+	} 
+	
+	public Trougao(double a, double b, double c) {
+		ime = "trougao";
+		this.a = a;
+		izracunajPovrsinu();
+		izracunajObim();
+	} 
+	
+    public void izracunajPovrsinu()
     { 
-        povrsina = strA*strA*Math.sqrt(3)/4;
-        System.out.println("Povrsina trougla je " + povrsina);
-        return povrsina;
+        povrsina = a*a*Math.sqrt(3)/4;
     }
-    public double izracunajObim(double strA) {
-    	obim = strA*3;
-    	System.out.println("Obim trougla je " + obim);
-    	return obim;
+    
+    public void izracunajObim() {
+    	obim = a*3;
     }
 }
