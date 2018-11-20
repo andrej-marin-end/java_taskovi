@@ -14,6 +14,7 @@ public abstract class Geo_slika {
 	
 	abstract void izracunajObim();
 
+	
 	public int getObim() {
 		return obim;
 	}

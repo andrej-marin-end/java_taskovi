@@ -2,7 +2,6 @@ package zadatak7;
 
 public class Kvadrat {
 	double povrsina; 
-	double poluobim;
 	double obim;
 	
 	public double izracunajPovrsinu(double str)
@@ -13,7 +12,7 @@ public class Kvadrat {
     }
     public double izracunajObim(double str) {
     	obim = 4*str;
-    	System.out.println("Obim kvadrata je " + povrsina);
+    	System.out.println("Obim kvadrata je " + obim);
     	return obim;
     }
 }

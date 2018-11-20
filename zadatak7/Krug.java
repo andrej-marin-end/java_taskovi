@@ -7,12 +7,12 @@ public class Krug {
 	public double izracunajPovrsinu(double r)
     { 
         povrsina = r*r*Math.PI;
-        System.out.println("Povrsina kvadrata je " + povrsina);
+        System.out.println("Povrsina kruga je " + povrsina);
         return povrsina;
     }
-    public double izracunajObim(double strA, double strB, double strC) {
-    	obim = 4*strA;
-    	System.out.println("Obim kvadrata je " + povrsina);
+    public double izracunajObim(double r) {
+    	obim = 2*r*Math.PI;
+    	System.out.println("Obim kruga je " + obim);
     	return obim;
     }
 	
