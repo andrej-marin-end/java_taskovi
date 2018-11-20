@@ -33,7 +33,6 @@ public class Studenti_poeni {
     			System.out.println("Studenti" + imeStud + maxPoeni + "imaju jednak broj poena.");
     		}
     		
-    		
         }
 		
 		System.out.print("Najveci broj poena ima:" + imeStud + ", " + maxPoeni);	
