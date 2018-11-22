@@ -9,10 +9,10 @@ public abstract class NekretninaApstr {
 	int zona;
 	double kvadratura;
 	double cena;
-	Vlasnik podaciVlasnik = new Vlasnik();
 	int cenaZone;
+	Vlasnik podaciVlasnik = new Vlasnik();
 	
-	public NekretninaApstr () {}
+	//public NekretninaApstr () {}
 	
 	public NekretninaApstr (String adr, int zn, double kvd, Vlasnik pv) {
 		adresa = adr;
@@ -25,23 +25,17 @@ public abstract class NekretninaApstr {
 	
 	public void racunanjeCeneZone() {
 		if(zona == 1) {
-			cenaZone = zona1;
-			
+			cenaZone = zona1;	
 		}
 		if(zona == 2) {
-			cenaZone = zona2;
-			
+			cenaZone = zona2;	
 		}
 		if(zona == 3) {
-			cenaZone = zona3;
-			
+			cenaZone = zona3;	
 		}
 		if(zona == 4) {
-			cenaZone = zona4;
-			
+			cenaZone = zona4;	
 		}
 	}
-	
-	
-	
+		
 }

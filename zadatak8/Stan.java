@@ -8,7 +8,6 @@ public class Stan extends NekretninaApstr {
 	
 	public void racunanjeCenePodrumaITerase() {
 		cenaPodrumaITerase = (povrsinaPodruma + povrsinaTerase) * cenaZone * 0.33;
-		
 	}
 	
 	public Stan(String adr, int zn, double kvd, Vlasnik pv, double povrPdr, double povrTrs) {
@@ -21,12 +20,11 @@ public class Stan extends NekretninaApstr {
 	public void izracunajCenu() {
 		racunanjeCeneZone();
 		racunanjeCenePodrumaITerase();
-		
-		cena = cenaZone*kvadratura + cenaPodrumaITerase;
-		
+		cena = cenaZone*kvadratura + cenaPodrumaITerase;	
 	}
+	
 	public String toString() {
-		return "adresa :" + adresa + "\nvlasnik :" + podaciVlasnik.imePrezime + " " + podaciVlasnik.jmbg + " " + podaciVlasnik.brlk + "\ncena :" + cena; 
+		return "Adresa stana : " + adresa + "\nVlasnik stana : " + podaciVlasnik.imePrezime + ", Jmbg " + podaciVlasnik.jmbg + ", Br.lk. " + podaciVlasnik.brlk + "\nCena stana : " + cena + "\n"; 
 	}
 	
 }
