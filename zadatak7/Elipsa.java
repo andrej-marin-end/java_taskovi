@@ -8,28 +8,18 @@ public double p;
 	
 	public Elipsa(double a) {
 		super(a);
-		ime = "krug";
+		ime = "elipsa";
 		r = a;
 		izracunajPovrsinu();
 		izracunajObim();
 	} 
-	
 	public Elipsa(double a, double b) {
 		super(a);
 		ime = "elipsa";
-		p = a;
+		p = b;
 		izracunajPovrsinu();
 		izracunajObim();
 	} 
-	
-	public Elipsa(double a, double b, double c) {
-		super(a);
-		ime = "elipsa";
-		p = a;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
 	public void izracunajPovrsinu()
     { 
         povrsina = r*p*Math.PI;

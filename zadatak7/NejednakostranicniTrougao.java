@@ -8,28 +8,10 @@ public class NejednakostranicniTrougao extends Trougao {
 	public double b;
 	public double c;
 	
-	public NejednakostranicniTrougao(double a) {
-		super(a);
-		ime = "trougao";
-		b = a;
-		c = a;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
-	public NejednakostranicniTrougao(double a, double b) {
-		super(a);
-		ime = "jednakokraki trougao";
-		this.b = b;
-		c = b;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
 	public NejednakostranicniTrougao(double a, double b, double c) throws Exception {
 		super(a);
 		if (a==b || a==c || b==c) {
-			throw new Exception("Nije nejednakostranicni.");
+			throw new Exception("Nije nejednakostranicni.\n");
 		}
 		ime = "nejednakostranicni trougao";
 		this.b = b;

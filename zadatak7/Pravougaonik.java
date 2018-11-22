@@ -19,15 +19,6 @@ public class Pravougaonik extends Kvadrat {
 		izracunajPovrsinu();
 		izracunajObim();
 	} 
-	
-	public Pravougaonik(double a, double b, double c) {
-		super(a);
-		ime = "pravougaonik";
-		this.b = b;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
     public void izracunajPovrsinu()
     { 
         povrsina = a*b;

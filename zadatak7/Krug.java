@@ -10,21 +10,6 @@ public class Krug extends GeometrijskaSlika{
 		izracunajPovrsinu();
 		izracunajObim();
 	} 
-	
-	public Krug(double a, double b) {
-		ime = "krug";
-		r = a;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
-	public Krug(double a, double b, double c) {
-		ime = "krug";
-		r = a;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
 	public void izracunajPovrsinu()
     { 
         povrsina = r*r*Math.PI;
@@ -32,6 +17,5 @@ public class Krug extends GeometrijskaSlika{
     public void izracunajObim() {
     	obim = 2*r*Math.PI;
     }
-	
 	
 }

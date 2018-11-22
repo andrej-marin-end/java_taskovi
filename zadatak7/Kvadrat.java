@@ -8,22 +8,7 @@ public double a;
 		this.a = a;
 		izracunajPovrsinu();
 		izracunajObim();
-	} 
-	
-	public Kvadrat(double a, double b) {
-		ime = "kvadrat";
-		this.a = a;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
-	public Kvadrat(double a, double b, double c) {
-		ime = "kvadrat";
-		this.a = a;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
+	}
     public void izracunajPovrsinu()
     { 
         povrsina = a*a;

@@ -12,21 +12,6 @@ public double a;
 		izracunajPovrsinu();
 		izracunajObim();
 	} 
-	
-	public Trougao(double a, double b) {
-		ime = "trougao";
-		this.a = a;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
-	public Trougao(double a, double b, double c) {
-		ime = "trougao";
-		this.a = a;
-		izracunajPovrsinu();
-		izracunajObim();
-	} 
-	
     public void izracunajPovrsinu()
     { 
         povrsina = a*a*Math.sqrt(3)/4;
