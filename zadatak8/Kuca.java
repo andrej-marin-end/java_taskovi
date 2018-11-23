@@ -1,8 +1,8 @@
 package zadatak8; 
 
 public class Kuca extends NekretninaApstr {
-	double povrsOkucnice;
-	double cenaOkucnice;
+	private double povrsOkucnice;
+	private double cenaOkucnice;
 	
 	public void racunanjeCeneOkucnice() {
 		cenaOkucnice = povrsOkucnice*cenaZone*0.15;	
@@ -21,6 +21,6 @@ public class Kuca extends NekretninaApstr {
 	}
 	
 	public String toString() {
-		return "Adresa kuce : " + adresa + "\nVlasnik kuce : " + podaciVlasnik.imePrezime + ", " + "Jmbg " + podaciVlasnik.jmbg + ", " + "Br.lk. " + podaciVlasnik.brlk + "\nCena kuce : " + cena; 
+		return "Adresa kuce : " + adresa + "\nVlasnik kuce : " + podaciVlasnik.getImePrezime() + ", " + "Jmbg " + podaciVlasnik.getJmbg() + ", " + "Br.lk. " + podaciVlasnik.getBrlk() + "\nCena kuce : " + cena; 
 	}
 }

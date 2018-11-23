@@ -10,9 +10,10 @@ public abstract class NekretninaApstr {
 	double kvadratura;
 	double cena;
 	int cenaZone;
-	Vlasnik podaciVlasnik = new Vlasnik();
+	Vlasnik podaciVlasnik = new Vlasnik();	
 	
-	//public NekretninaApstr () {}
+	
+	public NekretninaApstr () {}
 	
 	public NekretninaApstr (String adr, int zn, double kvd, Vlasnik pv) {
 		adresa = adr;

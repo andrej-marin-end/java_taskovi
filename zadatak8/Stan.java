@@ -1,8 +1,8 @@
 package zadatak8;
 
 public class Stan extends NekretninaApstr {
-	double povrsinaPodruma;
-	double povrsinaTerase;
+	private double povrsinaPodruma;
+	private double povrsinaTerase;
 	
 	double cenaPodrumaITerase;
 	
@@ -24,7 +24,7 @@ public class Stan extends NekretninaApstr {
 	}
 	
 	public String toString() {
-		return "Adresa stana : " + adresa + "\nVlasnik stana : " + podaciVlasnik.imePrezime + ", Jmbg " + podaciVlasnik.jmbg + ", Br.lk. " + podaciVlasnik.brlk + "\nCena stana : " + cena + "\n"; 
+		return "Adresa stana : " + adresa + "\nVlasnik stana : " + podaciVlasnik.getImePrezime() + ", Jmbg " + podaciVlasnik.getJmbg() + ", Br.lk. " + podaciVlasnik.getBrlk() + "\nCena stana : " + cena + "\n"; 
 	}
 	
 }
