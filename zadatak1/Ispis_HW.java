@@ -7,4 +7,8 @@ public class Ispis_HW {
 	}
 }
 
-/*ZADATAK1: Kreirati projekat u razvojnom okruženju (Eclipse, IntelliJ) i napisati program koji u konzoli ispisuje tekst: “Hello World!”.*/
+
+
+/*ZADATAK1: Kreirati projekat u razvojnom okruženju (Eclipse, IntelliJ) 
+ i napisati program koji u konzoli ispisuje tekst: “Hello World!”.*/
+ 
